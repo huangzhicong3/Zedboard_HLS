@@ -1,2 +1,2 @@
 1. PS_VGA_BRAM
-2. PS_VGA_VDMA
+2. PS_VGA_VDMA# Zedboard_HLS
