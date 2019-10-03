@@ -1,0 +1,21 @@
+16:11:41 **** Build of configuration Debug for project standalone_bsp_0_xuartps_polled_example_1 ****
+make all 
+'Building file: ../src/xuartps_polled_example.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_polled_example.o" -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_polled_example.d" -MT"src/xuartps_polled_example.d" -o "src/xuartps_polled_example.o" "../src/xuartps_polled_example.c"
+'Finished building: ../src/xuartps_polled_example.c'
+' '
+'Building target: standalone_bsp_0_xuartps_polled_example_1.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xuartps_polled_example_1.elf"  ./src/xuartps_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: standalone_bsp_0_xuartps_polled_example_1.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size standalone_bsp_0_xuartps_polled_example_1.elf  |tee "standalone_bsp_0_xuartps_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27800	   1216	  22740	  51756	   ca2c	standalone_bsp_0_xuartps_polled_example_1.elf
+'Finished building: standalone_bsp_0_xuartps_polled_example_1.elf.size'
+' '
+
+16:11:45 Build Finished (took 3s.809ms)
+

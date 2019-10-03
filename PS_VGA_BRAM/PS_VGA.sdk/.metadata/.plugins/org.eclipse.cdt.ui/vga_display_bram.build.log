@@ -1,0 +1,47 @@
+00:10:39 **** Build of configuration Debug for project vga_display_bram ****
+make all 
+'Building file: ../src/VGA.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/VGA.o" -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/VGA.d" -MT"src/VGA.d" -o "src/VGA.o" "../src/VGA.c"
+'Finished building: ../src/VGA.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:5: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+     u16 *p0 = (u16*)malloc(sizeof(u16) * 32*EXPAND*24*EXPAND);
+     ^
+../src/helloworld.c:69:21: warning: incompatible implicit declaration of built-in function 'malloc'
+     u16 *p0 = (u16*)malloc(sizeof(u16) * 32*EXPAND*24*EXPAND);
+                     ^
+../src/helloworld.c:74:2: warning: implicit declaration of function 'VGA_Fill' [-Wimplicit-function-declaration]
+  VGA_Fill(0,0,640,480,0xff);
+  ^
+../src/helloworld.c:97:6: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+   if (temp > 2800)
+      ^
+../src/helloworld.c:141:4: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+  p = p0;
+    ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: vga_display_bram.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vga_display_bsp/ps7_cortexa9_0/lib -o "vga_display_bram.elf"  ./src/VGA.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_display_bram.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vga_display_bram.elf  |tee "vga_display_bram.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31808	   2192	   8292	  42292	   a534	vga_display_bram.elf
+'Finished building: vga_display_bram.elf.size'
+' '
+
+00:10:45 Build Finished (took 5s.926ms)
+

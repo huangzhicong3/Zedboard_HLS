@@ -1,0 +1,6 @@
+23:32:45 **** Incremental Build of configuration Debug for project vga_display ****
+make all 
+make: Nothing to be done for `all'.
+
+23:32:45 Build Finished (took 340ms)
+

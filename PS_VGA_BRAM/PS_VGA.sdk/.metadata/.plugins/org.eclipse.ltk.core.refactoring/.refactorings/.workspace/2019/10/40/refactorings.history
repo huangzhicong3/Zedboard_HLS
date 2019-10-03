@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vga_display&apos; to &apos;vga_display_bram&apos;" description="Rename resource &apos;vga_display&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/vga_display" name="vga_display_bram" stamp="1570032638529" updateReferences="true"/>
+</session>

@@ -1,0 +1,33 @@
+
+set_property PACKAGE_PIN  Y19  [get_ports {vid_vsync}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vid_vsync}]
+
+set_property PACKAGE_PIN  AA19  [get_ports {vid_hsync}]
+set_property IOSTANDARD LVCMOS33 [get_ports {vid_hsync}]
+
+set_property PACKAGE_PIN  V20   [get_ports {R[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {R[0]}]
+set_property PACKAGE_PIN    U20 [get_ports {R[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {R[1]}]
+set_property PACKAGE_PIN   V19  [get_ports {R[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {R[2]}]
+set_property PACKAGE_PIN   V18  [get_ports {R[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {R[3]}]
+
+set_property PACKAGE_PIN  AB22   [get_ports {G[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {G[0]}]
+set_property PACKAGE_PIN   AA22  [get_ports {G[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {G[1]}]
+set_property PACKAGE_PIN   AB21  [get_ports {G[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {G[2]}]
+set_property PACKAGE_PIN   AA21  [get_ports {G[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {G[3]}]
+
+set_property PACKAGE_PIN   Y21  [get_ports {B[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {B[0]}]
+set_property PACKAGE_PIN   Y20  [get_ports {B[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {B[1]}]
+set_property PACKAGE_PIN   AB20  [get_ports {B[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {B[2]}]
+set_property PACKAGE_PIN   AB19  [get_ports {B[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {B[3]}]

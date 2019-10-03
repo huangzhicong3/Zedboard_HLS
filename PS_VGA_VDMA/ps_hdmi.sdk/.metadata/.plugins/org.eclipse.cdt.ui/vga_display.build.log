@@ -1,0 +1,53 @@
+10:22:19 **** Auto Build of configuration Debug for project vga_display ****
+make all 
+'Building file: ../src/dynclk/dynclk.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dynclk/dynclk.o" -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dynclk/dynclk.d" -MT"src/dynclk/dynclk.d" -o "src/dynclk/dynclk.o" "../src/dynclk/dynclk.c"
+'Finished building: ../src/dynclk/dynclk.c'
+' '
+'Building file: ../src/display_ctrl/display_ctrl.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/display_ctrl/display_ctrl.o" -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/display_ctrl/display_ctrl.d" -MT"src/display_ctrl/display_ctrl.d" -o "src/display_ctrl/display_ctrl.o" "../src/display_ctrl/display_ctrl.c"
+'Finished building: ../src/display_ctrl/display_ctrl.c'
+' '
+'Building file: ../src/VGA.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/VGA.o" -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/VGA.d" -MT"src/VGA.d" -o "src/VGA.o" "../src/VGA.c"
+'Finished building: ../src/VGA.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.d" -o "src/vdma.o" "../src/vdma.c"
+'Finished building: ../src/vdma.c'
+' '
+'Building file: ../src/vga_display.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga_display.o" -I../../FSBL_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga_display.d" -MT"src/vga_display.d" -o "src/vga_display.o" "../src/vga_display.c"
+../src/vga_display.c: In function 'main':
+../src/vga_display.c:164:6: warning: suggest explicit braces to avoid ambiguous 'else' [-Wparentheses]
+   if (temp > 2800)
+      ^
+../src/vga_display.c:97:9: warning: unused variable 'p0' [-Wunused-variable]
+  short *p0 = (short*)malloc(sizeof(short) * 32*EXPAND*24*EXPAND);
+         ^
+'Finished building: ../src/vga_display.c'
+' '
+'Building target: vga_display.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../FSBL_bsp/ps7_cortexa9_0/lib -o "vga_display.elf"  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/VGA.o ./src/platform.o ./src/vdma.o ./src/vga_display.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_display.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vga_display.elf  |tee "vga_display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62056	   2328	24894416	24958800	17cd750	vga_display.elf
+'Finished building: vga_display.elf.size'
+' '
+
+10:22:29 Build Finished (took 9s.992ms)
+
